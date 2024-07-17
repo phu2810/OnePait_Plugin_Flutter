@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "69773725403",
+    "project_id": "widget-3cf82",
+    "storage_bucket": "widget-3cf82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69773725403:android:94ca79820dc8b2cfa946fe",
+        "android_client_info": {
+          "package_name": "com.example.androidwidget"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB80xzu71d3sZj5shtCu4b1A4MPJjQmB48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69773725403:android:006fd328d9533a50a946fe",
+        "android_client_info": {
+          "package_name": "vn.qsoft.onepait"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB80xzu71d3sZj5shtCu4b1A4MPJjQmB48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
