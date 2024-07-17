@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/onepait_widget"
+    android:initialLayout="@layout/onepait_widget"
+    android:minHeight="100dp"
+    android:minWidth="100dp"
+    android:targetCellWidth="3"
+    android:targetCellHeight="3"
+    android:previewImage="@android:drawable/ic_menu_add"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen">
+</appwidget-provider>

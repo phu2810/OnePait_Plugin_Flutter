@@ -12,12 +12,11 @@ public abstract class BaseAppWidget<T> extends AppWidgetProvider implements Upda
 
     private UpdateWidgetListener<T> updateWidgetListener = this;
     public static final String ACTION_AUTO_UPDATE =
-            "com.example.androidwidget.AUTO_UPDATE";
+            "vn.qsoft.onepait.onepait.widget.AUTO_UPDATE";
 
     @Override
     public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
-        Log.d("+++", "onReceive: " + intent.getAction());
         if(intent!=null && intent.getAction()!=null &&
                 intent.getAction().equals(ACTION_AUTO_UPDATE)){
             onUpdate(context);
@@ -29,7 +28,6 @@ public abstract class BaseAppWidget<T> extends AppWidgetProvider implements Upda
                 AppWidgetManager.getInstance(context.getApplicationContext());
         ComponentName thisAppWidgetComponentName = getComponentName(context.getApplicationContext());
         int[] appWidgetIds = appWidgetManager.getAppWidgetIds(thisAppWidgetComponentName);
-        Log.d("+++", "onUpdate222: " + appWidgetIds.length + " " + thisAppWidgetComponentName);
         onUpdate(context, appWidgetManager, appWidgetIds);
     }
     @Override

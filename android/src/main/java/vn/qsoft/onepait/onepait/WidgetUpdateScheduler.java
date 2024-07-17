@@ -43,4 +43,11 @@ public class WidgetUpdateScheduler {
         AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         am.cancel(getWidgetAlarmIntent(context, widgetClass));
     }
+
+    public static void updateWidgetNow(Context context, Class widgetClass) {
+        Intent intent = new Intent(context, widgetClass)
+                .setAction(BaseAppWidget.ACTION_AUTO_UPDATE)
+                .putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS,getActiveWidgetIds(context, widgetClass));
+        context.sendBroadcast(intent);
+    }
 }
